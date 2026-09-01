@@ -1,0 +1,423 @@
+/* ========================================
+   RESET
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ========================================
+   PALETA PRISCILA MENDRI
+
+   Rosa pastel  #E9B7B7
+   Pêssego      #F3C6AE
+   Creme        #FFF8EF
+   Bege         #E8D5C4
+   Dourado      #C9A66B
+   Marrom       #6B5145
+======================================== */
+
+
+/* ========================================
+   BODY
+======================================== */
+
+body {
+    min-height: 100vh;
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background:
+        linear-gradient(
+            180deg,
+            #FFF8EF 0%,
+            #FCEDE5 100%
+        );
+
+    color: #6B5145;
+
+    display: flex;
+    justify-content: center;
+
+    padding: 35px 20px 25px;
+}
+
+
+/* ========================================
+   CONTAINER
+======================================== */
+
+.bio-container {
+    width: 100%;
+    max-width: 480px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* ========================================
+   PERFIL
+======================================== */
+
+.profile {
+    width: 100%;
+
+    text-align: center;
+
+    margin-bottom: 28px;
+}
+
+
+/* ========================================
+   FOTO / LOGO
+======================================== */
+
+.profile-image-container {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 16px;
+}
+
+.profile-image {
+    width: 115px;
+    height: 115px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    background: #FFF8EF;
+
+    border: 5px solid #FFFFFF;
+
+    box-shadow:
+        0 5px 18px rgba(107, 81, 69, 0.15);
+}
+
+
+/* ========================================
+   NOME
+======================================== */
+
+.profile h1 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 27px;
+
+    font-weight: 600;
+
+    color: #6B5145;
+
+    margin-bottom: 7px;
+}
+
+
+/* ========================================
+   SUBTÍTULO
+======================================== */
+
+.subtitle {
+    font-size: 16px;
+
+    font-weight: 600;
+
+    color: #A96F6F;
+
+    margin-bottom: 8px;
+}
+
+
+/* ========================================
+   DESCRIÇÃO
+======================================== */
+
+.description {
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    color: #8C7469;
+}
+
+
+/* ========================================
+   LINKS
+======================================== */
+
+.links {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 13px;
+}
+
+
+/* ========================================
+   BOTÕES
+======================================== */
+
+.link-button {
+    width: 100%;
+
+    min-height: 62px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 15px 50px 15px 55px;
+
+    text-decoration: none;
+
+    color: #6B5145;
+
+    background: rgba(255, 255, 255, 0.85);
+
+    border: 1px solid #E8D5C4;
+
+    border-radius: 16px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    box-shadow:
+        0 4px 12px rgba(107, 81, 69, 0.07);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+
+/* ========================================
+   ÍCONE
+======================================== */
+
+.icon {
+    position: absolute;
+
+    left: 19px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+
+    font-size: 19px;
+}
+
+
+/* ========================================
+   SETA
+======================================== */
+
+.arrow {
+    position: absolute;
+
+    right: 18px;
+
+    font-size: 25px;
+
+    font-weight: 300;
+
+    color: #C9A66B;
+
+    transition: transform 0.25s ease;
+}
+
+
+/* ========================================
+   HOVER
+======================================== */
+
+.link-button:hover {
+    transform: translateY(-3px);
+
+    background: #FFFFFF;
+
+    border-color: #E9B7B7;
+
+    box-shadow:
+        0 8px 20px rgba(169, 111, 111, 0.14);
+}
+
+
+.link-button:hover .arrow {
+    transform: translateX(4px);
+}
+
+
+/* ========================================
+   LINK DESTAQUE — GRUPO VIP
+======================================== */
+
+.link-button.featured {
+    background:
+        linear-gradient(
+            135deg,
+            #E9B7B7,
+            #F3C6AE
+        );
+
+    border: none;
+
+    color: #FFFFFF;
+
+    min-height: 75px;
+
+    box-shadow:
+        0 7px 18px rgba(169, 111, 111, 0.20);
+}
+
+
+.link-button.featured:hover {
+    background:
+        linear-gradient(
+            135deg,
+            #E5AAAA,
+            #F0BDA1
+        );
+
+    box-shadow:
+        0 10px 25px rgba(169, 111, 111, 0.25);
+}
+
+
+.link-button.featured .icon {
+    font-size: 21px;
+}
+
+
+.link-button.featured .arrow {
+    color: #FFFFFF;
+}
+
+
+/* ========================================
+   CONTEÚDO DO BOTÃO DESTAQUE
+======================================== */
+
+.link-content {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 3px;
+
+    text-align: center;
+}
+
+
+.link-content strong {
+    font-size: 15px;
+
+    font-weight: 700;
+}
+
+
+.link-content small {
+    font-size: 11px;
+
+    font-weight: 400;
+
+    opacity: 0.92;
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+footer {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 5px;
+
+    margin-top: 30px;
+
+    text-align: center;
+}
+
+
+footer p {
+    font-size: 12px;
+
+    color: #8C7469;
+}
+
+
+footer span {
+    font-size: 10px;
+
+    color: #B09B8F;
+}
+
+
+/* ========================================
+   RESPONSIVIDADE
+======================================== */
+
+@media (max-width: 480px) {
+
+    body {
+        padding:
+            28px
+            16px
+            22px;
+    }
+
+
+    .profile-image {
+        width: 105px;
+        height: 105px;
+    }
+
+
+    .profile h1 {
+        font-size: 25px;
+    }
+
+
+    .subtitle {
+        font-size: 15px;
+    }
+
+
+    .description {
+        font-size: 13px;
+    }
+
+
+    .link-button {
+        min-height: 59px;
+
+        font-size: 14px;
+
+        border-radius: 14px;
+    }
+
+}
